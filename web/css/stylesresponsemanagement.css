@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Căn giữa các ngôi sao */
+    margin-bottom: 10px; /* Khoảng cách dưới cùng để tạo khoảng cách giữa nút Join Now và rating */
+}
+
+.rating .fa-star {
+    font-size: 20px; /* Kích thước của các ngôi sao */
+    margin-right: 2px; /* Khoảng cách giữa các ngôi sao */
+}
+
+.rating .text-warning {
+    color: #ffc107; /* Màu sắc của các ngôi sao đã đánh giá */
+}
+
+.rating .text-muted {
+    color: #e4e5e9; /* Màu sắc của các ngôi sao chưa đánh giá */
+}
+
+.rating .value {
+    font-size: 16px; /* Kích thước của giá trị xếp hạng */
+    margin-left: 5px; /* Khoảng cách giữa các ngôi sao và giá trị xếp hạng */
+}
+
+h1 {
+    text-align: center;
+}
+
+.header {
+    background-color: #28a745;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #28a745;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-button:hover {
+    background-color: #218838;
+    color: white;
+}
+
+.header-button.active {
+    background-color: #0069d9;
+    color: white;
+}
+
+.container {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.reply-box {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button.send-reply, button.cancel-reply {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button.send-reply {
+    background-color: #28a745;
+    color: white;
+}
+
+button.send-reply:hover {
+    background-color: #218838;
+}
+
+button.cancel-reply {
+    background-color: #dc3545;
+    color: white;
+}
+
+button.cancel-reply:hover {
+    background-color: #c82333;
+}
+
+.comments-section.hidden, .reply-box.hidden {
+    display: none;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
